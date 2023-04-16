@@ -1,1 +1,1 @@
-# minArcade
+# miniArcade
