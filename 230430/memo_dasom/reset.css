@@ -1,0 +1,55 @@
+html,
+header,
+h1,
+body,
+button,
+ul,
+li,
+div,
+input,
+textarea,
+dialog {
+  margin: initial;
+  padding: initial;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+dialog {
+  border: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+textarea {
+  font: inherit;
+  resize: none;
+}
+
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
