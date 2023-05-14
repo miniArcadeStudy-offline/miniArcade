@@ -3,6 +3,19 @@ import CardGenerator from "./src/CardGenerator.js";
 
 const colorArr = ['skyblue', 'antiquewhite', 'darkkhaki', 'salmon', 'cadetblue', 'mediumpurple'];
 
+const init = () => {
+	const $wrapper = document.querySelector('.wrapper');
+	$wrapper.innerHTML = '';
+}
+
+const buttonEvent = () => {
+	const $replay = document.querySelector('.replay');
+	$replay.addEventListener('click', () => {
+		init();
+		start();
+	});
+}
+
 const createCard = (cardArr) => {
 	const $wrapper = document.querySelector('.wrapper');
 	cardArr.forEach((curCard) => {
@@ -25,4 +38,5 @@ const start = () => {
 	cardEvent.showCard();
 }
 
+buttonEvent();
 start();
